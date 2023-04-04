@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --background-color: #0F1A20;
+  --white-color: #cecece;
+  --input-background-color: #0a1014;
+  --orange-color: #FC3639;
+  --green-color: #65e60f;
+  --darkgren-color: #38a816;
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  padding-top: 6.5rem;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+}
+
+#button {
+  position: fixed;
+  right: 1.9rem;
+  top: 1.7rem;
+  padding: 1.3rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--input-background-color);
+  color: var(--green-color);
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+#button:hover {
+  background-color: var(--darkgren-color);
+  color: var(--white-color);
+  border: none;
+}
+
+.note {
+  position: relative;
+  width: 41rem;
+  height: 40rem;
+  background-color: #fff;
+  margin: 0.5rem 1.2rem;
+  border: 0.2rem solid var(--input-background-color);
+}
+
+.tools {
+  position: absolute;
+  width: 100%;
+  height: 4rem;
+  background-color: var(--background-color);
+}
+
+.tools button {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: var(--input-background-color);
+  color: var(--orange-color);
+  font-size: 1.7rem;
+}
+
+.tools button:hover {
+  background-color: var(--orange-color);
+  color: var(--white-color);
+}
+
+textarea {
+  position: absolute;
+  width: 100%;
+  height: 36rem;
+  padding: 2rem;
+  top: 4rem;
+  outline: none;
+  font-size: 1.7rem;
+  background-color: var(--background-color);
+  color: #fff;
+  border: 0.2rem solid var(--input-background-color);
+}
