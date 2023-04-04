@@ -26,6 +26,7 @@ function addNote(valorText = '') {
   tools.appendChild(deleteButon)
 
   const textArea = document.createElement('textarea')
+  textArea.placeholder = 'Write your note'
   textArea.value = valorText
   
   // console.log(valorText)
